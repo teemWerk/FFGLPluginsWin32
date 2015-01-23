@@ -1,0 +1,51 @@
+﻿Build started 1/22/2015 8:10:42 PM.
+     1>Project "D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\BxText.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\blocks\ofxFTGL\libs\FTGL\include /I"..\blocks\freetype-2.5.4\include" /I..\blocks\ofxFTGL\src /I..\include /I..\..\..\\include /I..\..\..\\boost /I..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins /I..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D FTGL_LIBRARY_STATIC /D _DEBUG /D _WINDOWS /D NOMINMAX /D _WIN32_WINNT=0x0502 /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\BxTextApp.cpp ..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGL.cpp ..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfo.cpp ..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfoData.cpp ..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager.cpp ..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginSDK.cpp
+     1>cl : Command line warning D9030: '/Gm' is incompatible with multiprocessing; ignoring /MP switch
+         FFGLPluginSDK.cpp
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\blocks\ffglmsw\src\ffglsdk_1_5\source\ffglplugins\ffglpluginsdk.cpp(62): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+         FFGLPluginManager.cpp
+         FFGLPluginInfoData.cpp
+         FFGLPluginInfo.cpp
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\blocks\ffglmsw\src\ffglsdk_1_5\source\ffglplugins\ffglplugininfo.cpp(65): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(245) : see declaration of 'strdup'
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\blocks\ffglmsw\src\ffglsdk_1_5\source\ffglplugins\ffglplugininfo.cpp(66): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(245) : see declaration of 'strdup'
+         FFGL.cpp
+         BxTextApp.cpp
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(141): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(141): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(154): warning C4244: 'argument' : conversion from 'const GLuint' to 'float', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(167): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(200): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(238): warning C4244: '=' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(240): warning C4244: '=' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(241): warning C4244: '=' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(243): warning C4244: '=' : conversion from 'GLdouble' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(244): warning C4244: '=' : conversion from 'GLdouble' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(246): warning C4244: '=' : conversion from 'GLdouble' to 'GLfloat', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(257): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\bxtext\src\bxtextapp.cpp(327): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\blocks\ofxFTGL\libs\FTGL\lib\vs /LIBPATH:..\..\..\\lib\msw\x86 "cinder-v120_d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBCPMT /DEF:"ffglPlugins.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.lib" /MACHINE:X86 /DLL Debug\Resources.res
+         Debug\BxTextApp.obj
+         Debug\FFGL.obj
+         Debug\FFGLPluginInfo.obj
+         Debug\FFGLPluginInfoData.obj
+         Debug\FFGLPluginManager.obj
+         Debug\FFGLPluginSDK.obj
+            Creating library D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.lib and object D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.exp
+     1>BxTextApp.obj : error LNK2019: unresolved external symbol "public: __thiscall ofxFTGLSimpleLayout::ofxFTGLSimpleLayout(void)" (??0ofxFTGLSimpleLayout@@QAE@XZ) referenced in function "public: virtual unsigned long __thiscall ffglTest::InitGL(struct FFGLViewportStructTag const *)" (?InitGL@ffglTest@@UAEKPBUFFGLViewportStructTag@@@Z)
+     1>BxTextApp.obj : error LNK2019: unresolved external symbol "public: __thiscall ofxFTGLSimpleLayout::~ofxFTGLSimpleLayout(void)" (??1ofxFTGLSimpleLayout@@QAE@XZ) referenced in function "public: void * __thiscall ofxFTGLSimpleLayout::`scalar deleting destructor'(unsigned int)" (??_GofxFTGLSimpleLayout@@QAEPAXI@Z)
+     1>BxTextApp.obj : error LNK2019: unresolved external symbol "public: void __thiscall ofxFTGLSimpleLayout::drawString(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float,float,float)" (?drawString@ofxFTGLSimpleLayout@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@MMM@Z) referenced in function "public: virtual unsigned long __thiscall ffglTest::ProcessOpenGL(struct ProcessOpenGLStructTag *)" (?ProcessOpenGL@ffglTest@@UAEKPAUProcessOpenGLStructTag@@@Z)
+     1>BxTextApp.obj : error LNK2019: unresolved external symbol "public: void __thiscall ofxFTGLSimpleLayout::setLineLength(float)" (?setLineLength@ofxFTGLSimpleLayout@@QAEXM@Z) referenced in function "public: virtual unsigned long __thiscall ffglTest::InitGL(struct FFGLViewportStructTag const *)" (?InitGL@ffglTest@@UAEKPBUFFGLViewportStructTag@@@Z)
+     1>BxTextApp.obj : error LNK2019: unresolved external symbol "public: void __thiscall ofxFTGLSimpleLayout::setAlignment(enum FTGL::TextAlignment)" (?setAlignment@ofxFTGLSimpleLayout@@QAEXW4TextAlignment@FTGL@@@Z) referenced in function "public: virtual unsigned long __thiscall ffglTest::InitGL(struct FFGLViewportStructTag const *)" (?InitGL@ffglTest@@UAEKPBUFFGLViewportStructTag@@@Z)
+     1>D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\Debug\BxText.dll : fatal error LNK1120: 5 unresolved externals
+     1>Done Building Project "D:\Projects\cinder_0.8.6_vc2013\cinder_0.8.6_vc2013\apps\BxText\vc2013\BxText.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.08

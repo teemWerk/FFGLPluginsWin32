@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{65059483-B798-48DC-B7FB-7EA63CC07E3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw">
+      <UniqueIdentifier>{6474BAF1-1A08-4EC2-B206-3601DB324668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw\src">
+      <UniqueIdentifier>{8D359506-0CDE-47D2-BB8E-F25A9AB69FE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw\src\FFGLSDK_1_5">
+      <UniqueIdentifier>{F56BABEF-6DA1-484E-BB1E-E3A7781E06C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw\src\FFGLSDK_1_5\Source">
+      <UniqueIdentifier>{0CA40DCC-CF5F-423D-B7E5-BD73D174151E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins">
+      <UniqueIdentifier>{5DAFC647-FD9F-40EF-A9BF-BB3ECDAE68DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\FFGLmsw\src\FFGLSDK_1_5\Include">
+      <UniqueIdentifier>{A3911A96-30A3-4BC2-93E9-0D5D79CBC477}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BxTextApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BxTextApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGL.cpp">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfo.cpp">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfoData.cpp">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager.cpp">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginSDK.cpp">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfo.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager_inl.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginSDK.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGL.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLExtensions.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLFBO.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLLib.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLShader.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FreeFrame.h">
+      <Filter>Blocks\FFGLmsw\src\FFGLSDK_1_5\Include</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\ofxFTGL\src\ofxFTGLFont.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\ofxFTGL\src\ofxFTGLSimpleLayout.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

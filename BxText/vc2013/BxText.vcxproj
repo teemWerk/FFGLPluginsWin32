@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3E0371E-712D-4424-8EB4-F29C9209D546}</ProjectGuid>
+    <RootNamespace>BxText</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\blocks\ofxFTGL\libs\FTGL\include;..\blocks\freetype-2.5.4\include;..\blocks\ofxFTGL\src;..\include;..\..\..\\include;..\..\..\\boost;..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins;..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;FTGL_LIBRARY_STATIC;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;%(AdditionalDependencies);glu32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\blocks\ofxFTGL\libs\FTGL\lib\vs;..\..\..\\lib\msw\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>ffglPlugins.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\blocks\ofxFTGL\libs\FTGL\include;..\blocks\freetype-2.5.4\include;..\blocks\ofxFTGL\src;..\include;..\..\..\\include;..\..\..\\boost;..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins;..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;FTGL_LIBRARY_STATIC;FT2_BUILD_LIBRARY;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;ftgl_static.lib;freetype254.lib;%(AdditionalDependencies);glu32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\blocks\ofxFTGL\libs\FTGL\lib\vs;..\..\..\\lib\msw\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>ffglPlugins.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\blocks\ofxFTGL\src\ofxFTGLFont.cpp" />
+    <ClCompile Include="..\blocks\ofxFTGL\src\ofxFTGLSimpleLayout.cpp" />
+    <ClCompile Include="..\src\BxTextApp.cpp" />
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGL.cpp" />
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfo.cpp" />
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfoData.cpp" />
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager.cpp" />
+    <ClCompile Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginSDK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginInfo.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginManager_inl.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Source\FFGLPlugins\FFGLPluginSDK.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGL.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLExtensions.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLFBO.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLLib.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FFGLShader.h" />
+    <ClInclude Include="..\blocks\FFGLmsw\src\FFGLSDK_1_5\Include\FreeFrame.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
