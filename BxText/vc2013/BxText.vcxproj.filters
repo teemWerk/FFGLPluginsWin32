@@ -34,6 +34,12 @@
     <Filter Include="Blocks\FFGLmsw\src\FFGLSDK_1_5\Include">
       <UniqueIdentifier>{A3911A96-30A3-4BC2-93E9-0D5D79CBC477}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Blocks\OSC">
+      <UniqueIdentifier>{fb85db81-0021-4c30-a9ec-1cc3917608f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\Headers">
+      <UniqueIdentifier>{fe404a83-e536-4c3c-87c1-bd61dce330d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\BxTextApp.cpp">
@@ -96,10 +102,97 @@
     <ClCompile Include="..\blocks\ofxFTGL\src\ofxFTGLSimpleLayout.cpp">
       <Filter>Blocks</Filter>
     </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscBundle.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscListener.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscMessage.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscSender.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscReceivedElements.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscTypes.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\ip\IpEndpointName.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\NetworkingUtils.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\UdpSocket.cpp">
+      <Filter>Blocks\OSC</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Resources.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscArg.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscBundle.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscListener.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscMessage.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscSender.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\MessageMappingOscPacketListener.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscException.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscHostEndianness.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPacketListener.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscReceivedElements.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscTypes.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\IpEndpointName.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\NetworkingUtils.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\PacketListener.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\TimerListener.h">
+      <Filter>Blocks\OSC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\UdpSocket.h">
+      <Filter>Blocks\OSC\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

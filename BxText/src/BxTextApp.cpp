@@ -9,6 +9,7 @@
 #include "cinder/gl/Texture.h"
 #include "cinder/Font.h"
 #include "cinder/gl/TextureFont.h"
+#include "OscListener.h"
 
 #include "FFGLPluginSDK.h"
 #include "FFGLLib.h"
@@ -66,6 +67,8 @@ protected:
 	bool cached = false;
 	int counter = 0;
 
+	osc::Listener listener;
+
 	// Parameters
 	float m_size;
 	float m_x;
@@ -78,6 +81,7 @@ protected:
 	float m_opacity;
 	Color mTextColor;
 	string str;
+	string tempstr;
 	string previousString;
 
 	int m_initResources;
@@ -128,7 +132,6 @@ ffglTest::ffglTest ()
 	SetParamInfo ( FFPARAM_OPACITY, "Alpha", FF_TYPE_STANDARD, 1.0f );
 	SetParamInfo ( FFPARAM_X, "X", FF_TYPE_STANDARD, 0.5f );
 	SetParamInfo ( FFPARAM_Y, "Y", FF_TYPE_STANDARD, 0.5f );
-
 }
 
 
@@ -153,6 +156,8 @@ DWORD ffglTest::InitGL ( const FFGLViewportStruct *vp )
 	layoutText->loadFont ( fs::path ( "C:\\Windows\\Fonts\\times.ttf" ), 64 );
 	layoutText->setLineLength ( vp->width * 2 );
 	layoutText->setAlignment ( FTGL_ALIGN_CENTER );
+
+	listener.setup ( 3000 );
 
 	initialized = true;
 
@@ -181,6 +186,20 @@ DWORD ffglTest::DeInitGL ()
 
 DWORD ffglTest::ProcessOpenGL ( ProcessOpenGLStruct *pGL )
 {
+	if (initialized)
+	{
+		while ( listener.hasWaitingMessages () ) {
+			osc::Message message;
+			listener.getNextMessage ( &message );
+			if ( message.getAddress () == "/bxtext/text" )
+			{
+				str = message.getArgAsString ( 0 );
+				boundingBox = layoutText->getStringBoundingBox ( str, 0, 0 );
+			}
+		}
+	}
+	
+
 	gl::enableAlphaBlending ();
 
 	if ( pGL->numInputTextures<1 ) return FF_FAIL;
@@ -321,10 +340,11 @@ DWORD ffglTest::SetParameter ( const SetParameterStruct* pParam )
 			break;
 		case FFPARAM_TEXT:
 			text = *( ( char ** ) ( unsigned ) &( pParam->NewParameterValue ) );
-			str = string ( text );
-			if ( initialized & str != previousString )
+			tempstr = string ( text );
+			if ( initialized & tempstr != previousString )
 			{
-				previousString = str;
+				previousString = tempstr;
+				str = tempstr;
 				boundingBox = layoutText->getStringBoundingBox ( str, 0, 0 );
 			}
 			break;
