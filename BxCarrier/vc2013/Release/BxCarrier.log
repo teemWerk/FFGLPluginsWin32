@@ -1,0 +1,19 @@
+﻿Build started 4/2/2015 8:08:38 PM.
+     1>Project "C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\BxCarrier.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /I..\..\..\Cinder\include /I..\..\..\Cinder\boost /Zi /nologo /W3 /WX- /MP /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D NOMINMAX /D _WIN32_WINNT=0x0502 /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\AveragingBuffer.cpp
+         AveragingBuffer.cpp
+     1>..\src\AveragingBuffer.cpp(32): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\AveragingBuffer.cpp(34): warning C4305: 'argument' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Release\BxCarrier.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\..\Cinder\lib\msw\x86 "cinder-v120.lib" OpenGL32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Release\BxCarrier.pdb" /MAP /SUBSYSTEM:WINDOWS /OPT:REF /LTCG /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Release\BxCarrier.lib" /MACHINE:X86 /SAFESEH Release\Resources.res
+         Release\AveragingBuffer.obj
+         Release\BxCarrierApp.obj
+         Generating code
+         Finished generating code
+         BxCarrier.vcxproj -> C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Release\BxCarrier.exe
+     1>Done Building Project "C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\BxCarrier.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.87

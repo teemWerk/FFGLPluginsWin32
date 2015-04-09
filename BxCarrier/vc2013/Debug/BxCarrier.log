@@ -1,0 +1,16 @@
+﻿Build started 4/1/2015 11:31:15 PM.
+     1>Project "C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\BxCarrier.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /I..\..\..\Cinder\include /I..\..\..\Cinder\boost /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D NOMINMAX /D _WIN32_WINNT=0x0502 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\AveragingBuffer.cpp
+         AveragingBuffer.cpp
+     1>c:\users\tim\desktop\apps\bxcarrier\src\averagingbuffer.cpp(33): warning C4305: 'argument' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Debug\BxCarrier.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\..\Cinder\lib\msw\x86 "cinder-v120_d.lib" OpenGL32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBCPMT /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Debug\BxCarrier.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Debug\BxCarrier.lib" /MACHINE:X86 Debug\Resources.res
+         Debug\AveragingBuffer.obj
+         Debug\BxCarrierApp.obj
+         BxCarrier.vcxproj -> C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\Debug\BxCarrier.exe
+     1>Done Building Project "C:\Users\Tim\Desktop\apps\BxCarrier\vc2013\BxCarrier.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.56
